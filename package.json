@@ -8,11 +8,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@types/axios": "^0.14.0",
     "@types/echarts": "^4.4.1",
     "@types/file-saver": "^2.0.1",
     "@types/screenfull": "^4.1.0",
     "@types/xlsx": "0.0.36",
     "animate.css": "^3.7.2",
+    "axios": "^0.19.0",
     "core-js": "^3.3.2",
     "driver.js": "^0.9.8",
     "echarts": "^4.4.0",
@@ -26,6 +28,7 @@
     "xlsx": "^0.15.1"
   },
   "devDependencies": {
+    "@types/node-sass": "^4.11.0",
     "@types/webpack": "^4.39.8",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
@@ -33,6 +36,8 @@
     "babel-eslint": "^10.0.3",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.2",
