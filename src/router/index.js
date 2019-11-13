@@ -103,6 +103,57 @@ export const asyncRoutes = [
     ]
   },
   {
+    path: '/table',
+    name: 'Table',
+    redirect: '/table/base-table',
+    component: Layout,
+    meta: {
+      title: 'Table',
+      icon: 'el-icon-table iconfont'
+    },
+    children: [
+      {
+        path: 'base-table',
+        name: 'BaseTable',
+        component: () => import('@/views/table/common-table'),
+        meta: { title: '普通表格' }
+      },
+      {
+        path: 'complex-table',
+        name: 'ComplexTable',
+        component: () => import('@/views/table/complex-table'),
+        meta: { title: '复杂表格' }
+      }
+    ]
+  },
+  {
+    path:'/components',
+    component:Layout,
+    name:'Components',
+    redirect:'/components/upload',
+    meta:{icon:'el-icon-coin',title:'部分组件'},
+    children:[
+      {
+        path:'slide-yz',
+        name:'Slide-yz',
+        component: () => import('@/views/components/slide-yz'),
+        meta:{icon:'el-icon-s-claim',title:'滑动验证'}
+      },
+      {
+        path:'upload',
+        name:'Upload',
+        component: () => import('@/views/components/pushImg'),
+        meta:{icon:'el-icon-upload',title:'上传图片'}
+      },
+      {
+        path:'carousel',
+        name:'Carousel',
+        component: () => import('@/views/components/carousel'),
+        meta:{icon:'el-icon-lunbo iconfont',title:'轮播'}
+      }
+    ]
+  },
+  {
     path:'/echarts',
     name:'Echarts',
     component:Layout,
