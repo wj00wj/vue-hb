@@ -140,6 +140,7 @@ export const asyncRoutes = [
 const createRouter = () => {
   return new Router({
     routes:currencyRoutes,
+    mode:"history",
     scrollBehavior(){
       return {x:0,y:0}
     }

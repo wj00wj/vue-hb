@@ -62,7 +62,7 @@ export default{
             showSlide : false,
             ruleForm : {
                 user : 'admin',
-                pasword : '123456' 
+                password : '123456' 
             },
             rules:{
                 user : [

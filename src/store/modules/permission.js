@@ -6,7 +6,7 @@ const state = {
 }
 const mutations = {
     SET_ROUTES(state,payload){
-        state.route = [...currencyRoutes,...payload]
+        state.routes = [...currencyRoutes,...payload]
         state.addRoutes = payload
     }
 }
